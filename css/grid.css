@@ -1,0 +1,83 @@
+/* Оновлений CSS зі зміненими кольорами тексту */
+html {
+    margin: 0;
+    font-size: 14px;
+    font-family: Arial;
+    height: 100%;
+}
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column; /* Розміщуємо контент вертикально */
+}
+header {
+    padding: var(--gutter-width) calc(var(--gutter-width) * 2);
+    height: var(--header-height);
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between; /* Розміщуємо елементи по краях */
+    align-items: center; /* Вирівнюємо елементи по вертикалі по центру */
+}
+header > h2 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: blue; /* Змінюємо колір тексту на синій */
+}
+header > h2 > a {
+    text-decoration: none;
+}
+header > nav {
+    margin-top: 7px;
+}
+header .app-nav-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+header .app-nav-list > li {
+    margin-left: var(--gutter-width);
+}
+header .app-nav-list > li a {
+    text-decoration: none;
+    color: blue; /* Змінюємо колір тексту на синій */
+}
+header .app-main-btn {
+    border: none;
+    padding: calc(var(--gutter-width) / 2) var(--gutter-width);
+    background: var(--button-color-mobile);
+    color: white;
+    text-transform: uppercase;
+}
+
+/* main */
+.app-main-wrap {
+    margin: 0 calc(var(--gutter-width) * 2);
+    flex: 1; /* Розтягуємо основний контент на всю висоту залишку сторінки */
+    display: flex;
+}
+.app-main-wrap .app-main {
+    text-align: center;
+    flex: 3; /* Основний контент займає більше місця */
+    padding: var(--gutter-width);
+}
+.app-main-wrap .app-sidebar {
+    border: 1px solid #000;
+    flex: 1; /* Бічний контент займає менше місця */
+    padding: var(--gutter-width);
+}
+.app-main-wrap .desc {
+    margin: calc(var(--gutter-width) / 2) 0 var(--gutter-width);
+}
+.app-main-wrap .app-bg-cont img {
+    width: 100%;
+}
+
+footer {
+    margin: 0 calc(var(--gutter-width) * 2);
+    height: var(--footer-height);
+    text-align: center;
+    overflow: auto;
+    box-sizing: border-box;
+}

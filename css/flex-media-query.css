@@ -1,0 +1,11 @@
+
+@media (max-width: 576px) {
+    header > h2 {
+      flex: none; /* Замініть flex на none */
+      display: block; /* Додайте display: block */
+      margin: 10px 0; /* Додайте відступи, які вам потрібні */
+    }
+    /* Додайте інші стилі для малих екранів, які вам потрібні */
+  }
+  
+  
